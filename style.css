@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    height: min-100vh;
+    background-color: rgb(80, 96, 116);
+    /* position: absolute; */
+}
+
+.container{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    /* display: none; */
+}
+
+.header-section{
+    width: 22vw;
+    background-color: rgb(18, 26, 34);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 100%;
+    padding-top: 2%;
+    color: white;
+}
+
+.header-section > h1{
+    font-size: 130%;
+    color: white;
+    font-weight: 100;
+    margin-bottom: 8%;
+}
+
+.card-wrap{
+    width: 78vw;
+}
+
+.card-section{
+    width: 77vw;
+    height: 74vh;
+    background-color: rgb(80, 96, 116);
+    display: grid;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    margin-left: 10px;
+    padding-left: 2%;
+}
+
+.card-section > img{
+    height: 12vh;
+    width: 13vw;
+    object-fit: contain;
+    margin-bottom: 10%;
+    cursor: pointer;
+    transition: all .2s ease;
+    background-color: rgb(42, 43, 44);
+    padding: 2%;
+    box-shadow: 2px 1px 4px 1px rgb(15, 23, 31);
+    border-radius: 5px;
+    transition: all .2s ease-in;
+}
+
+.card-section > img:hover{
+    transform: scale(.95);
+    background-color: rgb(34, 35, 36);
+}
+
+.start-section{
+    height: 26vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.progress-section{
+    height: 60vh;
+    width: 4rem;
+    background-color: rgb(185, 195, 214);
+    margin-top: 12%;
+    border-radius: 4px;
+    position: relative;
+}
+
+.progress-section-inside{
+    background: linear-gradient(rgb(11, 77, 5), rgb(79, 231, 59));
+    /* background: linear-gradient(rgb(133, 9, 9), rgb(231, 59, 59)); */
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 0%;
+}
+
+.start-message{
+    color: white;
+    font-weight: 100;
+}
+
+.start-game{
+    width: 9rem;
+    height: 3rem;
+    background-color: rgb(78, 185, 64);
+    border: none;
+    border-radius: 3px;
+    font-weight:600;
+    border-bottom: 3rem;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    box-shadow: 2px 1px 4px 1px rgb(50, 68, 78);
+    font-size: large;
+    color: white;
+}
+
+.matches{
+    margin-top:.21rem;
+    font-weight: 100;
+    color: rgba(255,255,255, 0.5);
+}
+
+.matches-found{
+    font-size: xx-large;
+    color: rgba(255,255,255, 0.5);
+}
+
+.start-game:hover{
+    transform: scale(1.05);
+}
+
+/* GAME OVER SECTION */
+
+.game-over-section{
+    padding: 15% 0%;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 100;
+    display: none;
+}
+
+.game-over-score-wrap{
+    width: 20vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.play-again-btn{
+    width: 10rem;
+    height: 2rem;
+    font-weight: 900;
+    font-size: large;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    transition: all .2s ease-in;
+}
+
+
+.play-again-btn:hover{
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    color: white;
+    font-weight: 20;
+    transform: scale(1.05);
+}

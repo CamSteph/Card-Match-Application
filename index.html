@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Matching Game</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div class="game-over-section" data-game-over-section>
+        <h1 class="game-over-title">GAME OVER!</h1>
+        <div class="game-over-score-wrap">Matches found:  <h3 class="game-over-score" data-game-over-score>10</h3></div>
+        <p class="play-again-message">Want to play again? Click below.</p>
+        <button class="play-again-btn" data-play-again-btn>Play Again</button>
+    </div>
+    <div class="container" data-container>
+        <header class="header-section">
+            <h1 class="title">Card Matching Game</h1>
+            <h3 class="matches">Score: <h3 class="matches-found" data-matches-found>0</h3></h3>
+            <div class="progress-section">
+                <div class="progress-section-inside" data-progress-bar>
+                    0%
+                </div>
+            </div>
+        </header>
+        <div class="card-wrap">
+            <main class="card-section" data-card-section>
+            </main>
+            <div class="start-section">
+                <h3 class="start-message">Please click below to start!</h3>
+                <button class="start-game" data-start-game>Start Game</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
