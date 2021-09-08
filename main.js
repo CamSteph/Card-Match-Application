@@ -59,7 +59,7 @@ class MatchingGame{
         }
         for(let i = 0; i < this.arr_of_images.length; i++){
             this.cardSection.innerHTML += `
-            <img src="question.png" id="${this.arr_of_images[i].id}" alt="question" data-card>
+            <img src="https://camsteph.github.io/Card-Match-Application/img/question.png" id="${this.arr_of_images[i].id}" alt="question" data-card>
             `;
         }
     }
