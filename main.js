@@ -72,7 +72,7 @@ class MatchingGame{
                 cardFlipAudio.play();
                 for(let i = 0; i < this.arr_of_images.length - 1; i++){
                     if(this.arr_of_images[i].id == id){
-                        singleCard.path[0].src = `${this.arr_of_images[i].src}`;
+                        singleCard.path[0].src = `https://camsteph.github.io/Card-Match-Application/img/${this.arr_of_images[i].src}`;
                         break;
                     }
                 }
