@@ -87,7 +87,7 @@ class MatchingGame{
                 }, 150);
                 for(let i = 0; i < this.arr_of_images.length - 1; i++){
                     if(this.arr_of_images[i].id == id){
-                        singleCard.path[0].src = `${this.arr_of_images[i].src}`;
+                        singleCard.path[0].src = `https://camsteph.github.io/Card-Match-Application/img/${this.arr_of_images[i].src}`;
                         break;
                     }
                 }
@@ -107,19 +107,19 @@ class MatchingGame{
             else{
                 for(let i = 0; i < this.arr_of_images.length - 1; i++){
                     if(this.arr_of_images[i].id == id){
-                        singleCard.path[0].src = `${this.arr_of_images[i].src}`;
+                        singleCard.path[0].src = `https://camsteph.github.io/Card-Match-Application/img/${this.arr_of_images[i].src}`;
                         break;
                     }
                 }
                 setTimeout(() => {
                     errorNoiseAudio.play();
-                    singleCard.path[0].src = `question.png`;
+                    singleCard.path[0].src = `https://camsteph.github.io/Card-Match-Application/img/question.png`;
                     return;
                 }, 400);
                 this.currentFlips[0] = null;
                 this.currentFlips[1] = null;
                 setTimeout(() => {
-                    this.wrongMatch[0].path[0].src = `question.png`;
+                    this.wrongMatch[0].path[0].src = `https://camsteph.github.io/Card-Match-Application/img/question.png`;
                     this.wrongMatch.pop();
                 }, 400);
             }
