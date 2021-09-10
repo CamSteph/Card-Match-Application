@@ -12,7 +12,7 @@ This is a card matching game made with HTML, CSS, and JavaScript. This project d
    
 
 <b>What did you use to create this project?</b>
--   I used HTML for the structure of the website, CSS for the styling and aestetics of the website, and I used JavaScript to implement the game functionality and keep score. Also, I used viewport values to help with the responsiveness of the site without implementing media queries. This project also uses JavaScript's built-in audio API.
+-   I used HTML for the structure of the website, CSS for the styling and aesthetics of the website, and I used JavaScript to implement the game functionality and keep score. Also, I used viewport values to help with the responsiveness of the site without implementing media queries. This project also uses JavaScript's built-in audio API.
    
 
 <b>How to run this application?</b>
