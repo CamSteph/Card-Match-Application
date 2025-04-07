@@ -66,6 +66,8 @@ class MatchingGame{
 
     flipCard(singleCard){
         if(this.gameStarted){
+            console.log("singleCard:" , singleCard)
+            console.log("singleCard PATH:" , singleCard.path)
             let id = singleCard.path[0].id;
             if(!this.currentFlips[0]){
                 cardFlipAudio.volume = 0.45;
